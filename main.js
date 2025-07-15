@@ -22,10 +22,10 @@ client.on('messageCreate', (message) => {
 
   const content = message.content.trim();
 
-  if (content.includes("課題") ||
-      content.includes("テスト") &&
-      content.includes("終わった") ||
-      content.includes("褒めて")) {
+  if ((content.includes("課題") ||
+      content.includes("テスト")) &&
+      (content.includes("終わった") ||
+      content.includes("褒めて"))) {
     const reply = compliments[Math.floor(Math.random() * compliments.length)];
     message.reply(reply);
   }
