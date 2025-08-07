@@ -22,7 +22,8 @@ client.on('messageCreate', (message) => {
 
   const content = message.content.trim();
 
-  if ((content.includes("課題") ||
+  if ((content.includes("バイト") ||
+      content.includes("課題") ||
       content.includes("テスト")) &&
       (content.includes("終わった") ||
       content.includes("褒めて"))) {
